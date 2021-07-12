@@ -1,0 +1,43 @@
+{
+    "owner": {
+        "name": "Ana Clara Garcia Farah",
+        "img-url": "https://github.com/anaclara-gf.png",
+        "Recados": [], 
+        "Fotos": [],
+        "Vídeos": [],
+        "Fãs": [],
+        "Mensagens": [],
+        "confiável": 50,
+        "legal": 70,
+        "sexy": 100,
+        "gender": "feminino",
+        "status": "casada",
+        "location": "São Paulo, SP"
+    },
+    "friends": [
+        {
+            "name": "Cris Mantovani",
+            "img-url": "https://github.com/crismantovani.png"
+        },
+        {
+            "name": "Beatriz Penalva",
+            "img-url": "https://github.com/beatrizpenalva.png"
+        },
+        {
+            "name": "Kauana Agostini",
+            "img-url": "https://github.com/kauanaagostini.png"
+        },
+        {
+            "name": "Thais Wemberlaine",
+            "img-url": "https://github.com/ThWember.png"
+        },
+        {
+            "name": "Gabriela Costa Silva",
+            "img-url": "https://github.com/gabrielasilva1991.png"
+        },
+        {
+            "name": "Caroline Costa",
+            "img-url": "https://github.com/CarolineSCosta.png"
+        }
+    ]
+}
