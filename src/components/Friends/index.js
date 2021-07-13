@@ -7,7 +7,7 @@ export default function Friends() {
         <>
             <Title>Meus amigos ({data.friends.length})</Title>
             <Images>
-                {data.friends.map(friend => (
+                {data.friends.slice(0,6).map(friend => (
                     <a key={friend}>
                         <img src={friend["img-url"]} />
                         <p>{friend.name}</p>

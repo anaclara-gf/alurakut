@@ -2,17 +2,54 @@
     "owner": {
         "name": "Ana Clara Garcia Farah",
         "img-url": "https://github.com/anaclara-gf.png",
-        "Recados": [], 
-        "Fotos": [],
-        "Vídeos": [],
-        "Fãs": [],
-        "Mensagens": [],
-        "confiável": 50,
-        "legal": 70,
-        "sexy": 100,
+        "data": [
+            {
+                "label": "Recados",
+                "data": [],
+                "icon": "https://alurakut.vercel.app/icons/book.svg"
+            },
+            {
+                "label": "Fotos",
+                "data": [],
+                "icon": "https://alurakut.vercel.app/icons/camera.svg"
+            },
+            {
+                "label": "Vídeos",
+                "data": [],
+                "icon": "https://alurakut.vercel.app/icons/video-camera.svg"
+            },
+            {
+                "label": "Fãs",
+                "data": [],
+                "icon": "https://alurakut.vercel.app/icons/star.svg"
+            },
+            {
+                "label": "Mensagens",
+                "data": [],
+                "icon": "https://alurakut.vercel.app/icons/email.svg"
+            }
+        ],
+        "percentageData": [
+            {
+                "label": "confiável",
+                "percentage": "50%",
+                "icon": "https://alurakut.vercel.app/icons/smile.svg"
+            },
+            {
+                "label": "legal",
+                "percentage": "80%",
+                "icon": "https://alurakut.vercel.app/icons/cool.svg"
+            },
+            {
+                "label": "sexy",
+                "percentage": "20%",
+                "icon": "https://alurakut.vercel.app/icons/heart.svg"
+            }
+        ],
         "gender": "feminino",
         "status": "casada",
-        "location": "São Paulo, SP"
+        "location": "São Paulo, SP",
+        "communities": []
     },
     "friends": [
         {
@@ -38,6 +75,10 @@
         {
             "name": "Caroline Costa",
             "img-url": "https://github.com/CarolineSCosta.png"
+        }, 
+        {
+            "name": "Bruno de Sousa Delgado",
+            "img-url": "https://github.com/BruhMeh.png"
         }
     ]
 }

@@ -1,9 +1,9 @@
-import Main from '../src/components/Main';
-import Box from '../src/components/Box';
-import Header from '../src/components/Header';
-import Profile from '../src/components/Profile';
-import Friends from '../src/components/Friends';
-import Welcome from '../src/components/Welcome';
+import Header from '../../src/components/Header';
+import Main from '../../src/components/Main';
+import Box from '../../src/components/Box';
+import Profile from '../../src/components/Profile';
+import Communities from '../../src/components/Communities';
+import CreateCommunity from '../../src/components/CreateCommunity';
 
 import styled from 'styled-components';
 
@@ -25,17 +25,13 @@ export default function Home() {
         
         <div className='welcome'>
           <Box>
-            <Welcome />
+            <Communities />
           </Box>
         </div>
         
         <div className='profileRelations'>
           <Box>
-            <Friends />
-          </Box>
-
-          <Box>
-            <Friends />
+            <CreateCommunity />
           </Box>
         </div>
       </Main>

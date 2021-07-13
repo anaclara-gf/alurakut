@@ -1,5 +1,6 @@
 import { Background, Image, Menu, MainButton, Button, Input, NoBorderButton } from "./styles";
 import { FaSearch } from 'react-icons/fa';
+import Link from 'next/link';
 
 export default function Header() {
     return (
@@ -9,15 +10,15 @@ export default function Header() {
                     <Image>
                         <img className='logo' src='http://alurakut.vercel.app/logo.svg' />
                     </Image>
-                    <MainButton>
-                        Início
-                    </MainButton>
+                    <Link href="/">
+                        <MainButton>Início</MainButton>
+                    </Link>
                     <Button>
                         Amigos
                     </Button>
-                    <Button>
-                        Comunidades
-                    </Button>
+                    <Link href="/comunidades">
+                        <Button>Comunidades</Button>
+                    </Link>
                 </section>
                 <section className='menu'>
                     <NoBorderButton> 
