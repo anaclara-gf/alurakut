@@ -8,7 +8,7 @@ export const Background = styled.div`
     align-items: center;
 `;
 
-export const Menu = styled.div`
+export const Menu = styled.div` 
     width: 85%;
     margin: 0 auto;
     padding: 26px;
@@ -19,6 +19,64 @@ export const Menu = styled.div`
     .menu {
         display: flex;
         align-items: center;
+    }
+
+    .button {
+        border: 0;
+        margin: 0;
+        padding: 0 18px;
+        width: auto;
+        overflow: visible;
+        background: transparent;
+        cursor: pointer;
+        height: 20px;
+        color: white;
+        font-size: 14px;
+
+        :hover {
+            color: rgba(255,255,255,0.7);
+        }
+    }
+
+    .mainButton {
+        font-weight: 600;
+    }
+
+    .borderButton {
+        font-weight: 400;
+        border-left: 2px solid #5292C1;
+    }
+
+    .borderlessButton {
+        font-weight: 400;
+    }
+
+    .menuHamburguer {
+        display: flex;
+        align-items: center;
+    }
+
+    .portableButtons {
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        margin-left: 15px;
+
+        img {
+            height: 22px;
+        }
+    }
+
+    @media(min-width: 860px) {
+        .menuHamburguer {
+            display: none;
+        }
+    }
+
+    @media(max-width: 860px) {
+        .button {
+            display: none;
+        }
     }
 `;
 
@@ -33,61 +91,6 @@ export const Image = styled.div`
 
     .logo {
         height: 15px;
-    }
-`;
-
-export const Button = styled.button`
-    border: 0;
-    border-left: 2px solid #5292C1;
-    margin: 0;
-    padding: 0 18px;
-    width: auto;
-    overflow: visible;
-    background: transparent;
-    cursor: pointer;
-    height: 20px;
-    color: white;
-    font-size: 14px;
-    font-weight: 400;
-
-    :hover {
-        color: rgba(255,255,255,0.7);
-    }
-`;
-
-export const NoBorderButton = styled.button`
-    border: 0;
-    margin: 0;
-    padding: 0 18px;
-    width: auto;
-    overflow: visible;
-    background: transparent;
-    cursor: pointer;
-    height: 20px;
-    color: white;
-    font-size: 14px;
-    font-weight: 400;
-
-    :hover {
-        color: rgba(255,255,255,0.7);
-    }
-`;
-
-export const MainButton = styled.button`
-    margin: 0;
-    border: 0;
-    padding: 0 18px;
-    width: auto;
-    overflow: visible;
-    background: transparent;
-    cursor: pointer;
-    height: 20px;
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-
-    :hover {
-        color: rgba(255,255,255,0.7);
     }
 `;
 
@@ -121,5 +124,9 @@ export const Input = styled.p`
         color: rgba(255,255,255,0.6);
         font-weight: 100;
         font-size: 12px;
+    }
+
+    @media(max-width: 860px) {
+        display: none;  
     }
 `;

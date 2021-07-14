@@ -35,7 +35,7 @@ export default function Home() {
           </Box>
 
           <Box>
-            <Friends />
+            
           </Box>
         </div>
       </Main>

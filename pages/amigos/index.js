@@ -2,8 +2,7 @@ import Header from '../../src/components/Header';
 import Main from '../../src/components/Main';
 import Box from '../../src/components/Box';
 import Profile from '../../src/components/Profile';
-import Communities from '../../src/components/Communities';
-import CreateCommunity from '../../src/components/CreateCommunity';
+import AllFriends from '../../src/components/AllFriends';
 
 import styled from 'styled-components';
 
@@ -12,7 +11,7 @@ const FontConfig = styled.div`
     font-family: 'Rubik', sans-serif;
 `;
 
-export default function Comunidades() {
+export default function Amigos() {
   return (
     <FontConfig>
       <Header />
@@ -25,13 +24,7 @@ export default function Comunidades() {
         
         <div className='welcome'>
           <Box>
-            <Communities />
-          </Box>
-        </div>
-        
-        <div className='profileRelations'>
-          <Box>
-            <CreateCommunity />
+            <AllFriends />
           </Box>
         </div>
       </Main>

@@ -6,7 +6,7 @@ const Main = styled.main`
   padding: 16px;
   width: 85%;
   margin: 0 auto;
-  
+
   @media(min-width: 860px) {
     flex-direction: row;
     justify-content: space-between;
@@ -24,6 +24,12 @@ const Main = styled.main`
     .profileRelations {
       width: 312px;
       height: auto;
+    }
+  }
+
+  @media(max-width: 860px) {
+    .profile {
+      display: none;
     }
   }
 `;
