@@ -2,8 +2,10 @@ import Header from '../../src/components/Header';
 import Main from '../../src/components/Main';
 import Box from '../../src/components/Box';
 import Profile from '../../src/components/Profile';
-import Communities from '../../src/components/Communities';
+import CommunitiesList from '../../src/components/CommunitiesList';
 import CreateCommunity from '../../src/components/CreateCommunity';
+
+import DefineCommunityProvider from '../../src/context/Community';
 
 import styled from 'styled-components';
 
@@ -23,17 +25,19 @@ export default function Comunidades() {
           </Box>
         </div>
         
-        <div className='welcome'>
-          <Box>
-            <Communities />
-          </Box>
-        </div>
-        
-        <div className='profileRelations'>
-          <Box>
-            <CreateCommunity />
-          </Box>
-        </div>
+        <DefineCommunityProvider>
+          <div className='welcome'>
+            <Box>
+              <CommunitiesList />
+            </Box>
+          </div>
+          
+          <div className='profileRelations'>
+            <Box>
+              <CreateCommunity />
+            </Box>
+          </div>
+        </DefineCommunityProvider>
       </Main>
     </FontConfig>
   )

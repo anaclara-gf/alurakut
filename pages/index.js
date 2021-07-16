@@ -4,6 +4,9 @@ import Header from '../src/components/Header';
 import Profile from '../src/components/Profile';
 import Friends from '../src/components/Friends';
 import Welcome from '../src/components/Welcome';
+import CommunitiesHomePage from '../src/components/Communities';
+
+import DefineCommunityProvider from '../src/context/Community';
 
 import styled from 'styled-components';
 
@@ -33,10 +36,12 @@ export default function Home() {
           <Box>
             <Friends />
           </Box>
+          <DefineCommunityProvider>
+            <Box>
+              <CommunitiesHomePage />
+            </Box>
+          </DefineCommunityProvider>
 
-          <Box>
-            
-          </Box>
         </div>
       </Main>
     </FontConfig>

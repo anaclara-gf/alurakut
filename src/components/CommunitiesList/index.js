@@ -1,15 +1,12 @@
+import { Title, Subheading, Communities } from "./styles";
 
-import { Title, Images, Communities, More, Subheading } from "./styles";
-
-import Link from 'next/link';
 import React, { useEffect, useState } from "react";
 
 import { useDefineCommunity } from "../../context/Community";
 import { getRecords, findImage } from "../../utils/datoConfig";
 import ReactLoading from 'react-loading';
 
-export default function CommunitiesHomePage() {
-    
+export default function CommunitiesList() {
     const { defineCommunity, setDefineCommunity } = useDefineCommunity();
 
     const [loading, setLoading] = useState(true);
@@ -55,7 +52,7 @@ export default function CommunitiesHomePage() {
                         <p>Você pode pesquisar comunidades ou criar sua própria comunidade.</p>
                     </>
                 }
-                <Images>
+                <Communities>
                     {defineCommunity && !loading &&
                         defineCommunity.map(community => (
                             <a key={community.title}>
@@ -64,13 +61,8 @@ export default function CommunitiesHomePage() {
                             </a>
                         ))
                     }
-                </Images>
+                </Communities>
             </Subheading>
-            <More>
-                <Link href='/comunidades'>
-                    <button className='button'>Ver mais...</button>
-                </Link>
-            </More>
         </>
     )
 }

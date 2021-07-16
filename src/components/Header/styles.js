@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Background = styled.div`
-    background-color: ${({ theme }) => theme.colors.primary};
+    background-color: rgb(111, 146, 187);
     height: 48px;
     width: 100%;
     display: flex;

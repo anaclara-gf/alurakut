@@ -1,17 +1,16 @@
 import styled from "styled-components";
 
-export const Title = styled.div`
-    margin-bottom: 10px;
+export const Title = styled.h1`
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px; 
 `;
 
-export const Images = styled.ul`
+export const Communities = styled.ul` 
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     padding-bottom: 5px;
-    margin-bottom: 10px;
-    border-bottom: 2px solid #ECF2FA;
 
     a {
         height: 110px;
@@ -20,16 +19,17 @@ export const Images = styled.ul`
         cursor: pointer;
         display: flex;
         flex-direction: column;
+        margin-right: 20px;
     }
 
     .community-cover {
-        height: 85px;
         width: 85px;
+        height: 85px;
         object-fit: cover;
         border-radius: 8px;
     }
 
-    p {
+    .community-title {
         margin-top: 3px;
         font-size: 10px;
         font-weight: 600;
@@ -38,22 +38,13 @@ export const Images = styled.ul`
 
 `;
 
-export const More = styled.a`
-    font-size: 14px;
-    display: flex;
-    justify-content: flex-end;
-
-    .button {
-        background: none;
-        border:0;
-        cursor: pointer;
-        color: #2E7BB4;
-        font-weight: 600;
-        font-size: 14px;
-    }
-`;
-
 export const Subheading = styled.div`
+    p {
+        font-size: 14px;
+        color: #333333;
+        margin-bottom: 8px;
+    }
+
     .loading {
         width: 100%;
         margin: 0 auto;
