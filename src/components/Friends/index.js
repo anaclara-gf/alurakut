@@ -1,16 +1,14 @@
 import { Title, Images, More } from "./styles";
 import Link from 'next/link';
 
-import data from '../../utils/users.json';
-
-export default function Friends() {
+export default function Friends({followers}) {
     return (
         <>
-            <Title>Meus amigos ({data.friends.length})</Title>
+            <Title>Meus amigos ({followers.length})</Title>
             <Images>
-                {data.friends.slice(0,6).map(friend => (
-                    <a key={friend}>
-                        <img src={friend["img-url"]} />
+                {followers.slice(0,6).map(friend => (
+                    <a key={Math.random()}>
+                        <img src={friend.img} />
                         <p>{friend.name}</p>
                     </a>
                 ))}

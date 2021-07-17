@@ -1,5 +1,5 @@
 
-import { Title, Images, Communities, More, Subheading } from "./styles";
+import { Title, Images, More, Subheading } from "./styles";
 
 import Link from 'next/link';
 import React, { useEffect, useState } from "react";
@@ -17,7 +17,6 @@ export default function CommunitiesHomePage() {
     useEffect(() => {
         getRecords()
             .then(records => {
-                console.log(records)
                 if(!records.length) {
                     setLoading(false);
                     return;

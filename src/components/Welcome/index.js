@@ -14,7 +14,7 @@ export default function Welcome() {
         </Title>
         <ProfileNumbers>
             {data.owner.data.map(eachIcon => (
-                <EachProfileNumber>
+                <EachProfileNumber key={Math.random()}>
                     <p className='label'>{eachIcon.label}</p>
                     <div className='icon-and-number'>
                         <img src={eachIcon.icon} />
@@ -23,7 +23,7 @@ export default function Welcome() {
                 </EachProfileNumber>
             ))}
             {data.owner.percentageData.map(eachIcon => (
-                <EachProfileNumber>
+                <EachProfileNumber key={Math.random()}>
                     <p className='label'>{eachIcon.label}</p>
                     <div className='icons'>
                         <img src={eachIcon.icon} />

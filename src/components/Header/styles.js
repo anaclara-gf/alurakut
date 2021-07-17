@@ -20,6 +20,73 @@ export const Menu = styled.div`
         display: flex;
         align-items: center;
     }
+    
+    .search {
+        width: 185px;
+        height: 34px;
+        border-radius: 20px;
+        background-color: #5579A1;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+
+        .icon {
+            height: 16px;
+            color: #FFFFFF;
+        }
+
+        input {
+            background: none;
+            border: 0;
+            width: 70%;
+            margin-left: 10px;
+            color: #FFFFFF;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        input::placeholder {
+            color: rgba(255,255,255,0.6);
+            font-weight: 100;
+            font-size: 12px;
+        }
+    }
+
+    .full-header {
+        @media(max-width: 860px) {
+            display: none;  
+        }
+    }
+
+    .portable-header {
+        position: absolute;
+        right: 80px;
+    }
+
+    .portable-menu {
+        position: absolute;
+        top: 35px;
+        right: 0;
+        display: flex;
+        width: 120px;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: rgb(111,146,187);
+        padding: 20px 0 10px 20px;
+
+        button {
+            border: 0;
+            margin-bottom: 10px;
+            background-color: transparent;
+            color: white;
+            margin-right: 10px;
+            font-weight: 400;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    }
 
     .button {
         border: 0;
@@ -54,6 +121,7 @@ export const Menu = styled.div`
     .menuHamburguer {
         display: flex;
         align-items: center;
+        position: relative;
     }
 
     .portableButtons {
@@ -94,7 +162,7 @@ export const Image = styled.div`
     }
 `;
 
-export const Input = styled.p`
+export const InputPortable = styled.p`
     width: 185px;
     height: 34px;
     border-radius: 20px;
@@ -124,9 +192,5 @@ export const Input = styled.p`
         color: rgba(255,255,255,0.6);
         font-weight: 100;
         font-size: 12px;
-    }
-
-    @media(max-width: 860px) {
-        display: none;  
     }
 `;
