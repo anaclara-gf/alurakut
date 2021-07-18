@@ -1,4 +1,4 @@
-import { FontConfig, Main, Box, DescriptionBox } from './styles';
+import { FontConfig, Main, Box, DescriptionBox } from '../../src/styles/login/styles';
 
 import React, { useState } from 'react';
 import nookies from 'nookies';
